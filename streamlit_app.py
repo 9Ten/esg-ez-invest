@@ -273,7 +273,8 @@ with col2:
   #===== ESG Performance (1YR) =====#
   from pypfopt import DiscreteAllocation
   da = DiscreteAllocation(stock_post_weight, prices.iloc[0], total_portfolio_value=initial_capital * (pct_esg_stock/100.0))  # Initial capital
-  alloc, leftover = da.lp_portfolio(verbose=False)
+  alloc, leftover = da.greedy_portfolio(verbose=False)
+  # alloc, leftover = da.lp_portfolio(verbose=False)
   # alloc, leftover = da.lp_portfolio(verbose=True)
   # da = DiscreteAllocation(weights, prices.iloc[0], total_portfolio_value=100000)  # Initial capital
   # alloc, leftover = da.lp_portfolio(verbose=True)
