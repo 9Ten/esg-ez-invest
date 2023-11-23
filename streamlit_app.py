@@ -131,8 +131,8 @@ payouts = _financial_info['Payout Ratio 4']
 
 # Constructing the prior
 from pypfopt import black_litterman, risk_models
-from pypfopt import BlackLittermanModel, plotting
-import pypfopt
+from pypfopt import BlackLittermanModel
+# import pypfopt
 
 S = risk_models.CovarianceShrinkage(prices).ledoit_wolf()
 delta = black_litterman.market_implied_risk_aversion(market_prices)
