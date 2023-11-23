@@ -1,4 +1,4 @@
+pyportfolioopt
 pandas
 streamlit
-PyPortfolioOpt
 matplotlib
