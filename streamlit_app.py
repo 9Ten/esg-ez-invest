@@ -252,6 +252,8 @@ with col1:
   for bond in selected_esg_bond_df['ThaiBMA Symbol'].to_list():
     post_weight[bond] = equal_weight_top5_bonds/5.0
 
+  plt.style.use('seaborn-v0_8-deep')
+  
   fig, ax = plt.subplots(figsize=(8, 8))
   sorted_weights = pd.Series(post_weight).sort_values(ascending=False)
   # Plot a pie chart
