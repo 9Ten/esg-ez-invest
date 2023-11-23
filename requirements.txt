@@ -2,4 +2,5 @@ pyportfolioopt
 pandas
 streamlit
 matplotlib
+seaborn
 scikit-learn
