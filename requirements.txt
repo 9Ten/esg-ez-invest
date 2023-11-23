@@ -2,3 +2,4 @@ pyportfolioopt
 pandas
 streamlit
 matplotlib
+scikit-learn
